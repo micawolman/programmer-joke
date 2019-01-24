@@ -6,13 +6,12 @@ class ProgrammerJoke
     puts "\n"
     AVAILABLE_LANGUAGES.each { |language| puts "--> #{language}" }
     puts "\n"
-    nil
   end
 
   def self.joke(language = 'English')
     puts "\n"
-  	jokes = Joke.new(language)
-  	puts jokes.joke
+    jokes = Joke.new(language)
+    puts jokes.joke
     puts "\n"
   end
 
